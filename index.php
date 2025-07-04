@@ -261,6 +261,7 @@ if (isset($_POST["nome_perito"])) {
             <?php endif; ?>
 
             <form action="" method="POST">
+                <!-- Pesquisei se havia alguma forma de usar caracteres especiais pois estava dando erro, então achei esse 'htmlspecialchars'  -->
                 <input type="text" name="nome_perito" placeholder="Nome do perito" value="<?= htmlspecialchars($nome_perito) ?>" />
 
                 <select name="tipo">
